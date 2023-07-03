@@ -1,0 +1,337 @@
+
+/*
+ * Colors
+ */
+ :root {
+    --inter-blue: #439979;
+    --inter-background: #f8f6f1;
+    --inter-light: #ffffff;
+    --inter-dark: #000000;
+    --inter-gray: #b0e1b8;
+    --inter-text: #000000;
+
+    --inter-dark-background: #3a3a3a;
+    --inter-dark-blue: #82ffc0;
+    --inter-dark-light: #262626;
+    --inter-dark-dark: #80ffff;
+    --inter-dark-gray: #29627a;
+    --inter-dark-text: #80ffff;
+
+    --inter-font: Helvetica, Arial, sans-serif;
+    --content-width: 750px;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+/*
+ * Styles
+ */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.content {
+  max-width: var(--content-width);
+}
+
+a {
+    color: var(--inter-dark);
+}
+
+body {
+    background-color: var(--inter-background);
+}
+
+.post-title-colors {
+    background-color: var(--inter-gray);
+    border-color: var(--inter-dark);
+}
+
+.post-content-colors {
+    background-color: var(--inter-light);
+    border-color: var(--inter-dark);
+    color: var(--inter-text);
+}
+
+.light-text-color {
+    color: var(--inter-light);
+}
+
+.dark-text-color {
+    color: var(--inter-text);
+}
+
+.title-colors {
+    background-color: var(--inter-blue);
+    border-color: var(--inter-dark);
+}
+
+.link-button-colors {
+    background-color: var(--inter-blue);
+    color: var(--inter-light);
+    border-color: var(--inter-dark);
+}
+
+.other-button-colors {
+    background-color: var(--inter-light);
+    color: var(--inter-dark);
+    border-color: var(--inter-dark);
+}
+
+.menu {
+    padding: 2.5px;
+    max-width: var(--content-width);
+}
+
+.menu-title {
+    border: 1px solid;
+    padding: 2.5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+.menu-links {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 2.5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.entry {
+    padding: 2.5px;
+    margin-top: 4px;
+    max-width: var(--content-width);
+}
+
+.content-box {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+}
+
+.gallery-content-box {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+    text-align: left;
+}
+
+.link-box {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+}
+
+.archive-box {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+}
+
+
+.title-box {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 2.5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.about-content-box {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 2px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+}
+
+.about-title-box {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 2.5px;
+    padding-left: 4px;
+    font-family: var(--inter-font);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.menu-button {
+    border-style: solid;
+    border-width: 1px;
+    font-family: var(--inter-font);
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 2.5px;
+    text-decoration: none;
+}
+
+.link-button {
+    border-style: solid;
+    border-width: 1px;
+    font-family: var(--inter-font);
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 2.5px;
+    text-decoration: none;
+}
+
+.link-button:before {
+    content: "\21F1  ";
+}
+
+.date-button {
+    border-style: solid;
+    border-width: 1px;
+    font-family: var(--inter-font);
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 2.5px;
+    text-decoration: none;
+}
+
+.category-button {
+    border-style: solid;
+    border-width: 1px;
+    font-family: var(--inter-font);
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 2.5px;
+    text-decoration: none;
+}
+
+.box-left {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.box-middle {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.box-right {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.image {
+    max-width: 90%;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page-item {
+    margin: 4px;
+    padding: 4px;
+    border: 1px solid;
+}
+
+.active {
+    background-color: #b0e1b8;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: var(--inter-dark-dark);
+    }
+
+    body {
+        background-color: var(--inter-dark-background);
+    }
+
+    .post-title-colors {
+        background-color: var(--inter-dark-gray);
+        border-color: var(--inter-dark-dark);
+    }
+
+    .post-content-colors {
+        background-color: var(--inter-dark-light);
+        border-color: var(--inter-dark-dark);
+    }
+
+    .light-text-color {
+        color: var(--inter-dark-light);
+    }
+
+    .dark-text-color {
+        color: var(--inter-dark-text);
+    }
+
+    .title-colors {
+        background-color: var(--inter-dark-blue);
+        border-color: var(--inter-dark-dark);
+    }
+
+    .link-button-colors {
+        background-color: var(--inter-dark-blue);
+        color: var(--inter-dark-light);
+        border-color: var(--inter-dark-dark);
+    }
+
+    .other-button-colors {
+        background-color: var(--inter-dark-light);
+        color: var(--inter-dark-dark);
+        border-color: var(--inter-dark-dark);
+    }
+}

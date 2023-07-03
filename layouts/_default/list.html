@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main class="main list" role="main">
+
+	{{- with .Content }}
+	<div class="content main__content clearfix">
+		{{ . }}
+	</div>
+	{{- end }}
+	{{- range .Pages }}
+  <div class="entry">
+    <div class="title-box post-title-colors">
+      <a href="{{ .Permalink }}">
+        {{- .Title }}
+      </a>
+    </div>
+    <div class="content-box post-content-colors">
+      <div class="dark-text-color">
+        {{- .Content }}
+      </div>
+    </div>
+    <div class="link-box post-content-colors">
+      <div class="date-button other-button-colors box-middle">Posted: {{ .Date.Format "2006-01-02" }}</div>
+      <div class="category-button other-button-colors box-right">Category:
+        {{ range (.GetTerms "tags" )}}
+          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> 
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+	{{- end }}
+</main>
+{{ end }}
