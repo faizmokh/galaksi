@@ -50,7 +50,7 @@ pre {
 }
 
 .content {
-  max-width: var(--content-width);
+  width: var(--content-width);
 }
 
 a {

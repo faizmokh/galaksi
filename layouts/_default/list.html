@@ -20,7 +20,7 @@
     </div>
     <div class="link-box post-content-colors">
       <div class="date-button other-button-colors box-middle">Posted: {{ .Date.Format "2006-01-02" }}</div>
-      <div class="category-button other-button-colors box-right">Category:
+      <div class="category-button other-button-colors box-right">Tags:
         {{ range (.GetTerms "tags" )}}
           <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> 
         {{ end }}
